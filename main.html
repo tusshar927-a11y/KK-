@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Login Page</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+.container{
+    width:400px;
+    padding:40px;
+    background:rgba(255,255,255,0.12);
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.logo i{
+    font-size:55px;
+    color:white;
+}
+
+.logo h2{
+    color:white;
+    margin-top:10px;
+}
+
+.input-box{
+    position:relative;
+    margin:20px 0;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px 45px 14px 15px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:rgba(255,255,255,0.15);
+    color:white;
+    font-size:16px;
+}
+
+.input-box input::placeholder{
+    color:#ddd;
+}
+
+.input-box i{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:white;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.options a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:white;
+    color:#2a5298;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background:#e8e8e8;
+    transform:translateY(-2px);
+}
+
+.register{
+    text-align:center;
+    margin-top:20px;
+    color:white;
+}
+
+.register a{
+    color:#fff;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.register a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:450px){
+    .container{
+        width:90%;
+        padding:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <i class="fas fa-user-circle"></i>
+        <h2>Welcome Back</h2>
+    </div>
+
+    <form>
+        <div class="input-box">
+            <input type="email" placeholder="Email Address" required>
+            <i class="fas fa-envelope"></i>
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Password" required>
+            <i class="fas fa-lock"></i>
+        </div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox">
+                Remember Me
+            </label>
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">
+            Login
+        </button>
+
+        <div class="register">
+            Don't have an account?
+            <a href="#">Register</a>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
